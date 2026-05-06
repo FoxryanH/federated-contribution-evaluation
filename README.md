@@ -1,6 +1,6 @@
 # 《面向数据交易的质量感知联邦学习贡献评价方法》实验代码
 
-本仓库包含一组用于联邦学习贡献评估的实验代码与 JSON 结果数据，覆盖准确性、效率、攻击鲁棒性、适应性、参数敏感度和可解释性等分析场景。
+本仓库包含一组用于联邦学习贡献评估的实验代码与 JSON 结果数据，覆盖准确性、效率、鲁棒性、适应性、参数敏感度和可解释性等分析场景。
 
 仓库中的目录和文件路径已统一为英文，便于上传 GitHub 和跨平台使用。
 
@@ -10,7 +10,7 @@
 .
 +-- 1.accuracy_analysis/              # 准确性分析
 +-- 2.efficiency_analysis/            # 效率分析
-+-- 3.attack_robustness_analysis/     # 攻击鲁棒性分析
++-- 3.attack_robustness_analysis/     # 鲁棒性分析
 +-- 4.adaptability_analysis/          # 适应性分析
 +-- 5.parameter_sensitivity_analysis/ # 参数敏感度分析
 +-- 6.interpretability_analysis/      # 可解释性分析
