@@ -1,0 +1,45 @@
+{
+  "config": {
+    "code_version": "shapley_controlled_time_analysis_s1_v1",
+    "method": "shapley",
+    "client_counts": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rounds": 10,
+    "client_size": 1000,
+    "created_at": "2026-04-14T16:34:14"
+  },
+  "timing_results": [
+    {
+      "n": 3,
+      "time_seconds": 190.98176843859255,
+      "time_minutes": 3.1830294739765423
+    },
+    {
+      "n": 4,
+      "time_seconds": 389.6651208344847,
+      "time_minutes": 6.494418680574745
+    },
+    {
+      "n": 5,
+      "time_seconds": 849.7727192565799,
+      "time_minutes": 14.162878654276332
+    },
+    {
+      "n": 6,
+      "time_seconds": 1694.1715243402869,
+      "time_minutes": 28.236192072338113
+    },
+    {
+      "n": 7,
+      "time_seconds": 5015.251191288233,
+      "time_minutes": 83.58751985480389
+    }
+  ],
+  "total_elapsed_seconds": 21829.716250108555,
+  "total_elapsed_minutes": 363.8286041684759
+}

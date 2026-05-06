@@ -1,0 +1,655 @@
+{
+  "method": "loo",
+  "code_version": "loo_controlled_time_analysis_s1_v1",
+  "n": 4,
+  "rounds": 10,
+  "client_size": 1000,
+  "parallel_time_analysis": {
+    "runs": [
+      {
+        "run_label": "[run 01/05]",
+        "run_type": "full_coalition",
+        "excluded_client_id": null,
+        "parallel_time_analysis": {
+          "rounds": [
+            {
+              "round_index": 1,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.9348977748304605,
+              "contribution_evaluation_seconds": 0.03894786722958088,
+              "estimated_parallel_round_total_seconds": 2.9738456420600414
+            },
+            {
+              "round_index": 2,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.318221503868699,
+              "contribution_evaluation_seconds": 0.03566532954573631,
+              "estimated_parallel_round_total_seconds": 2.3538868334144354
+            },
+            {
+              "round_index": 3,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.284725671634078,
+              "contribution_evaluation_seconds": 0.0365865770727396,
+              "estimated_parallel_round_total_seconds": 2.3213122487068176
+            },
+            {
+              "round_index": 4,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.3153899926692247,
+              "contribution_evaluation_seconds": 0.031149636954069138,
+              "estimated_parallel_round_total_seconds": 2.346539629623294
+            },
+            {
+              "round_index": 5,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.280578089877963,
+              "contribution_evaluation_seconds": 0.037706317380070686,
+              "estimated_parallel_round_total_seconds": 2.3182844072580338
+            },
+            {
+              "round_index": 6,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2556743547320366,
+              "contribution_evaluation_seconds": 0.03382688947021961,
+              "estimated_parallel_round_total_seconds": 2.289501244202256
+            },
+            {
+              "round_index": 7,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2456745486706495,
+              "contribution_evaluation_seconds": 0.038701239973306656,
+              "estimated_parallel_round_total_seconds": 2.284375788643956
+            },
+            {
+              "round_index": 8,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.1795550361275673,
+              "contribution_evaluation_seconds": 0.03562949225306511,
+              "estimated_parallel_round_total_seconds": 2.2151845283806324
+            },
+            {
+              "round_index": 9,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.255852796137333,
+              "contribution_evaluation_seconds": 0.03147880360484123,
+              "estimated_parallel_round_total_seconds": 2.287331599742174
+            },
+            {
+              "round_index": 10,
+              "selected_clients": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2296095322817564,
+              "contribution_evaluation_seconds": 0.03137618862092495,
+              "estimated_parallel_round_total_seconds": 2.2609857209026814
+            }
+          ],
+          "final_utility_evaluation_seconds": 1.2772715631872416,
+          "total_max_client_local_train_seconds": 23.300179300829768,
+          "total_contribution_evaluation_seconds": 1.6283399052917957,
+          "total_estimated_parallel_time_seconds": 24.928519206121564,
+          "total_estimated_parallel_time_minutes": 0.4154753201020261
+        }
+      },
+      {
+        "run_label": "[run 02/05]",
+        "run_type": "leave_one_out",
+        "excluded_client_id": 0,
+        "parallel_time_analysis": {
+          "rounds": [
+            {
+              "round_index": 1,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2812108527868986,
+              "contribution_evaluation_seconds": 0.0423959381878376,
+              "estimated_parallel_round_total_seconds": 2.323606790974736
+            },
+            {
+              "round_index": 2,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2264921963214874,
+              "contribution_evaluation_seconds": 0.033672548830509186,
+              "estimated_parallel_round_total_seconds": 2.2601647451519966
+            },
+            {
+              "round_index": 3,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.1982214488089085,
+              "contribution_evaluation_seconds": 0.029999013990163803,
+              "estimated_parallel_round_total_seconds": 2.2282204627990723
+            },
+            {
+              "round_index": 4,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2954533714801073,
+              "contribution_evaluation_seconds": 0.028794994577765465,
+              "estimated_parallel_round_total_seconds": 2.3242483660578728
+            },
+            {
+              "round_index": 5,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 1.9738520961254835,
+              "contribution_evaluation_seconds": 0.029199741780757904,
+              "estimated_parallel_round_total_seconds": 2.0030518379062414
+            },
+            {
+              "round_index": 6,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 1.5611814875155687,
+              "contribution_evaluation_seconds": 0.02820688672363758,
+              "estimated_parallel_round_total_seconds": 1.5893883742392063
+            },
+            {
+              "round_index": 7,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.0756742265075445,
+              "contribution_evaluation_seconds": 0.03119809925556183,
+              "estimated_parallel_round_total_seconds": 2.1068723257631063
+            },
+            {
+              "round_index": 8,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.1179239209741354,
+              "contribution_evaluation_seconds": 0.030513236299157143,
+              "estimated_parallel_round_total_seconds": 2.1484371572732925
+            },
+            {
+              "round_index": 9,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2844338789582253,
+              "contribution_evaluation_seconds": 0.029009681195020676,
+              "estimated_parallel_round_total_seconds": 2.313443560153246
+            },
+            {
+              "round_index": 10,
+              "selected_clients": [
+                1,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.1064200811088085,
+              "contribution_evaluation_seconds": 0.028959307819604874,
+              "estimated_parallel_round_total_seconds": 2.1353793889284134
+            }
+          ],
+          "final_utility_evaluation_seconds": 0.6557073425501585,
+          "total_max_client_local_train_seconds": 21.120863560587168,
+          "total_contribution_evaluation_seconds": 0.9676567912101746,
+          "total_estimated_parallel_time_seconds": 22.088520351797342,
+          "total_estimated_parallel_time_minutes": 0.36814200586328905
+        }
+      },
+      {
+        "run_label": "[run 03/05]",
+        "run_type": "leave_one_out",
+        "excluded_client_id": 1,
+        "parallel_time_analysis": {
+          "rounds": [
+            {
+              "round_index": 1,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2544183265417814,
+              "contribution_evaluation_seconds": 0.02946150302886963,
+              "estimated_parallel_round_total_seconds": 2.283879829570651
+            },
+            {
+              "round_index": 2,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.295816520228982,
+              "contribution_evaluation_seconds": 0.028214380145072937,
+              "estimated_parallel_round_total_seconds": 2.324030900374055
+            },
+            {
+              "round_index": 3,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2310786675661802,
+              "contribution_evaluation_seconds": 0.026141755282878876,
+              "estimated_parallel_round_total_seconds": 2.257220422849059
+            },
+            {
+              "round_index": 4,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.3421998880803585,
+              "contribution_evaluation_seconds": 0.03174491040408611,
+              "estimated_parallel_round_total_seconds": 2.3739447984844446
+            },
+            {
+              "round_index": 5,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.333991538733244,
+              "contribution_evaluation_seconds": 0.03012428805232048,
+              "estimated_parallel_round_total_seconds": 2.3641158267855644
+            },
+            {
+              "round_index": 6,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2945474199950695,
+              "contribution_evaluation_seconds": 0.028751151636242867,
+              "estimated_parallel_round_total_seconds": 2.3232985716313124
+            },
+            {
+              "round_index": 7,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.341669322922826,
+              "contribution_evaluation_seconds": 0.030621951445937157,
+              "estimated_parallel_round_total_seconds": 2.372291274368763
+            },
+            {
+              "round_index": 8,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.293971162289381,
+              "contribution_evaluation_seconds": 0.0293286070227623,
+              "estimated_parallel_round_total_seconds": 2.3232997693121433
+            },
+            {
+              "round_index": 9,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.1215343587100506,
+              "contribution_evaluation_seconds": 0.02916046418249607,
+              "estimated_parallel_round_total_seconds": 2.1506948228925467
+            },
+            {
+              "round_index": 10,
+              "selected_clients": [
+                0,
+                2,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2294401582330465,
+              "contribution_evaluation_seconds": 0.027710942551493645,
+              "estimated_parallel_round_total_seconds": 2.25715110078454
+            }
+          ],
+          "final_utility_evaluation_seconds": 0.6082187257707119,
+          "total_max_client_local_train_seconds": 22.73866736330092,
+          "total_contribution_evaluation_seconds": 0.899478679522872,
+          "total_estimated_parallel_time_seconds": 23.63814604282379,
+          "total_estimated_parallel_time_minutes": 0.39396910071372987
+        }
+      },
+      {
+        "run_label": "[run 04/05]",
+        "run_type": "leave_one_out",
+        "excluded_client_id": 2,
+        "parallel_time_analysis": {
+          "rounds": [
+            {
+              "round_index": 1,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.3256272468715906,
+              "contribution_evaluation_seconds": 0.03238370642066002,
+              "estimated_parallel_round_total_seconds": 2.3580109532922506
+            },
+            {
+              "round_index": 2,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.250240994617343,
+              "contribution_evaluation_seconds": 0.030799003317952156,
+              "estimated_parallel_round_total_seconds": 2.281039997935295
+            },
+            {
+              "round_index": 3,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.353237122297287,
+              "contribution_evaluation_seconds": 0.026262950152158737,
+              "estimated_parallel_round_total_seconds": 2.3795000724494457
+            },
+            {
+              "round_index": 4,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.3001167494803667,
+              "contribution_evaluation_seconds": 0.023613987490534782,
+              "estimated_parallel_round_total_seconds": 2.3237307369709015
+            },
+            {
+              "round_index": 5,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.33273502625525,
+              "contribution_evaluation_seconds": 0.028606483712792397,
+              "estimated_parallel_round_total_seconds": 2.3613415099680424
+            },
+            {
+              "round_index": 6,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.318711081519723,
+              "contribution_evaluation_seconds": 0.031093882396817207,
+              "estimated_parallel_round_total_seconds": 2.34980496391654
+            },
+            {
+              "round_index": 7,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2229905240237713,
+              "contribution_evaluation_seconds": 0.028320390731096268,
+              "estimated_parallel_round_total_seconds": 2.2513109147548676
+            },
+            {
+              "round_index": 8,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.2817628979682922,
+              "contribution_evaluation_seconds": 0.029884958639740944,
+              "estimated_parallel_round_total_seconds": 2.311647856608033
+            },
+            {
+              "round_index": 9,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.282320685684681,
+              "contribution_evaluation_seconds": 0.02671610750257969,
+              "estimated_parallel_round_total_seconds": 2.3090367931872606
+            },
+            {
+              "round_index": 10,
+              "selected_clients": [
+                0,
+                1,
+                3
+              ],
+              "max_client_local_train_seconds": 2.271205399185419,
+              "contribution_evaluation_seconds": 0.03269500099122524,
+              "estimated_parallel_round_total_seconds": 2.3039004001766443
+            }
+          ],
+          "final_utility_evaluation_seconds": 0.6519475784152746,
+          "total_max_client_local_train_seconds": 22.938947727903724,
+          "total_contribution_evaluation_seconds": 0.9423240497708321,
+          "total_estimated_parallel_time_seconds": 23.881271777674556,
+          "total_estimated_parallel_time_minutes": 0.39802119629457594
+        }
+      },
+      {
+        "run_label": "[run 05/05]",
+        "run_type": "leave_one_out",
+        "excluded_client_id": 3,
+        "parallel_time_analysis": {
+          "rounds": [
+            {
+              "round_index": 1,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.1619354877620935,
+              "contribution_evaluation_seconds": 0.03215387836098671,
+              "estimated_parallel_round_total_seconds": 2.1940893661230803
+            },
+            {
+              "round_index": 2,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.233023652806878,
+              "contribution_evaluation_seconds": 0.03130742907524109,
+              "estimated_parallel_round_total_seconds": 2.264331081882119
+            },
+            {
+              "round_index": 3,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.1456969641149044,
+              "contribution_evaluation_seconds": 0.02961108088493347,
+              "estimated_parallel_round_total_seconds": 2.175308044999838
+            },
+            {
+              "round_index": 4,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.2537079136818647,
+              "contribution_evaluation_seconds": 0.026775885373353958,
+              "estimated_parallel_round_total_seconds": 2.2804837990552187
+            },
+            {
+              "round_index": 5,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.2070085238665342,
+              "contribution_evaluation_seconds": 0.02529112808406353,
+              "estimated_parallel_round_total_seconds": 2.2322996519505978
+            },
+            {
+              "round_index": 6,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.146905332803726,
+              "contribution_evaluation_seconds": 0.028587907552719116,
+              "estimated_parallel_round_total_seconds": 2.1754932403564453
+            },
+            {
+              "round_index": 7,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.2292050775140524,
+              "contribution_evaluation_seconds": 0.027073537930846214,
+              "estimated_parallel_round_total_seconds": 2.2562786154448986
+            },
+            {
+              "round_index": 8,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.104092476889491,
+              "contribution_evaluation_seconds": 0.027831312268972397,
+              "estimated_parallel_round_total_seconds": 2.1319237891584635
+            },
+            {
+              "round_index": 9,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.228482300415635,
+              "contribution_evaluation_seconds": 0.02767472341656685,
+              "estimated_parallel_round_total_seconds": 2.256157023832202
+            },
+            {
+              "round_index": 10,
+              "selected_clients": [
+                0,
+                1,
+                2
+              ],
+              "max_client_local_train_seconds": 2.227832932025194,
+              "contribution_evaluation_seconds": 0.03062715381383896,
+              "estimated_parallel_round_total_seconds": 2.258460085839033
+            }
+          ],
+          "final_utility_evaluation_seconds": 0.6405907012522221,
+          "total_max_client_local_train_seconds": 21.937890661880374,
+          "total_contribution_evaluation_seconds": 0.9275247380137444,
+          "total_estimated_parallel_time_seconds": 22.86541539989412,
+          "total_estimated_parallel_time_minutes": 0.381090256664902
+        }
+      }
+    ],
+    "post_hoc_contribution_seconds": 3.978051245212555e-05,
+    "total_max_client_local_train_seconds": 112.03654861450195,
+    "total_contribution_evaluation_seconds": 5.365363944321871,
+    "total_estimated_parallel_time_seconds": 117.40191255882382,
+    "total_estimated_parallel_time_minutes": 1.9566985426470638
+  },
+  "wall_clock_time_analysis": {
+    "method": "loo",
+    "time_analysis_code_version": "loo_controlled_time_analysis_s1_v1",
+    "n": 4,
+    "rounds": 10,
+    "client_size": 1000,
+    "wall_clock_seconds": 362.33510605990887,
+    "wall_clock_minutes": 6.038918434331815
+  }
+}

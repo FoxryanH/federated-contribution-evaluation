@@ -1,0 +1,144 @@
+{
+  "method": "smartfl",
+  "code_version": "smartfl_controlled_time_analysis_s1_v1",
+  "n": 4,
+  "rounds": 10,
+  "client_size": 1000,
+  "parallel_time_analysis": {
+    "rounds": [
+      {
+        "round_index": 1,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 3.2923164926469326,
+        "contribution_evaluation_seconds": 3.8101114574819803,
+        "estimated_parallel_round_total_seconds": 7.102427950128913
+      },
+      {
+        "round_index": 2,
+        "selected_clients": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.627295335754752,
+        "contribution_evaluation_seconds": 2.270570447668433,
+        "estimated_parallel_round_total_seconds": 4.897865783423185
+      },
+      {
+        "round_index": 3,
+        "selected_clients": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.6665162667632103,
+        "contribution_evaluation_seconds": 2.234520345926285,
+        "estimated_parallel_round_total_seconds": 4.901036612689495
+      },
+      {
+        "round_index": 4,
+        "selected_clients": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.6589990854263306,
+        "contribution_evaluation_seconds": 3.5199299287050962,
+        "estimated_parallel_round_total_seconds": 6.178929014131427
+      },
+      {
+        "round_index": 5,
+        "selected_clients": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.6383114885538816,
+        "contribution_evaluation_seconds": 2.2142498046159744,
+        "estimated_parallel_round_total_seconds": 4.852561293169856
+      },
+      {
+        "round_index": 6,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.6663229689002037,
+        "contribution_evaluation_seconds": 3.461432807147503,
+        "estimated_parallel_round_total_seconds": 6.127755776047707
+      },
+      {
+        "round_index": 7,
+        "selected_clients": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "max_client_local_train_seconds": 2.65778055973351,
+        "contribution_evaluation_seconds": 3.6212770771235228,
+        "estimated_parallel_round_total_seconds": 6.279057636857033
+      },
+      {
+        "round_index": 8,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.625437593087554,
+        "contribution_evaluation_seconds": 2.91232873685658,
+        "estimated_parallel_round_total_seconds": 5.537766329944134
+      },
+      {
+        "round_index": 9,
+        "selected_clients": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "max_client_local_train_seconds": 2.6634417939931154,
+        "contribution_evaluation_seconds": 2.64783145301044,
+        "estimated_parallel_round_total_seconds": 5.311273247003555
+      },
+      {
+        "round_index": 10,
+        "selected_clients": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "max_client_local_train_seconds": 2.6729124449193478,
+        "contribution_evaluation_seconds": 3.545385295525193,
+        "estimated_parallel_round_total_seconds": 6.218297740444541
+      }
+    ],
+    "total_max_client_local_train_seconds": 27.169334029778838,
+    "total_contribution_evaluation_seconds": 30.237637354061007,
+    "total_estimated_parallel_time_seconds": 57.406971383839846,
+    "total_estimated_parallel_time_minutes": 0.9567828563973307
+  },
+  "wall_clock_time_analysis": {
+    "method": "smartfl",
+    "time_analysis_code_version": "smartfl_controlled_time_analysis_s1_v1",
+    "n": 4,
+    "rounds": 10,
+    "client_size": 1000,
+    "wall_clock_seconds": 156.243192974478,
+    "wall_clock_minutes": 2.6040532162413
+  }
+}

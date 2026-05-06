@@ -1,0 +1,45 @@
+{
+  "config": {
+    "code_version": "lcefl_controlled_time_analysis_s1_v1",
+    "method": "lcefl",
+    "client_counts": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rounds": 10,
+    "client_size": 1000,
+    "created_at": "2026-04-14T10:26:39"
+  },
+  "timing_results": [
+    {
+      "n": 3,
+      "time_seconds": 64.15299506485462,
+      "time_minutes": 1.0692165844142436
+    },
+    {
+      "n": 4,
+      "time_seconds": 64.91735698282719,
+      "time_minutes": 1.0819559497137865
+    },
+    {
+      "n": 5,
+      "time_seconds": 64.77207966707647,
+      "time_minutes": 1.079534661117941
+    },
+    {
+      "n": 6,
+      "time_seconds": 66.02973477728665,
+      "time_minutes": 1.1004955796214442
+    },
+    {
+      "n": 7,
+      "time_seconds": 66.47298323735595,
+      "time_minutes": 1.1078830539559326
+    }
+  ],
+  "total_elapsed_seconds": 1233.154114075005,
+  "total_elapsed_minutes": 20.55256856791675
+}

@@ -1,0 +1,45 @@
+{
+  "config": {
+    "code_version": "smartfl_controlled_time_analysis_s1_v1",
+    "method": "smartfl",
+    "client_counts": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rounds": 10,
+    "client_size": 1000,
+    "created_at": "2026-04-14T10:21:11"
+  },
+  "timing_results": [
+    {
+      "n": 3,
+      "time_seconds": 59.81492576748133,
+      "time_minutes": 0.9969154294580221
+    },
+    {
+      "n": 4,
+      "time_seconds": 57.406971383839846,
+      "time_minutes": 0.9567828563973307
+    },
+    {
+      "n": 5,
+      "time_seconds": 55.910305198282,
+      "time_minutes": 0.9318384199713667
+    },
+    {
+      "n": 6,
+      "time_seconds": 64.18799716793,
+      "time_minutes": 1.0697999527988336
+    },
+    {
+      "n": 7,
+      "time_seconds": 62.21442936360836,
+      "time_minutes": 1.0369071560601393
+    }
+  ],
+  "total_elapsed_seconds": 882.6654815431684,
+  "total_elapsed_minutes": 14.711091359052807
+}

@@ -1,0 +1,500 @@
+{
+  "config": {
+    "code_version": "loo_controlled_compare_s1_global_v2_adaptive_shrinkage",
+    "base_code_version": "mingaplr_compare_v6_damped_no_early_stop",
+    "dataset": "CIFAR-10",
+    "partition": "CONTROLLED_S1",
+    "scenario_tag": "S1",
+    "num_clients": 6,
+    "clients_per_round": 6,
+    "rounds": 30,
+    "task_size": 1000,
+    "gen_test_size": 10000,
+    "private_train_size": 49000,
+    "fixed_seed": 42,
+    "loo_scope": "global",
+    "loo_utility_metric": "gen_acc",
+    "normalized_contribution": "adaptive_uniform_shrinkage_over_positive_loo",
+    "raw_normalized_contribution": "positive_loo_sum_to_one_else_uniform",
+    "loo_shrinkage_gamma": 1.0,
+    "run_count": 7,
+    "requested_client_samples": 18000,
+    "unused_private_samples": 31000,
+    "controlled_note": "Client data generation matches the controlled SmartFL scripts. A full federated training run is executed once using all 6 clients, then once for each leave-one-out client set. Global LOO values are computed as U(N) - U(N\\{i}) using the final model utility. Positive LOO values are first normalized to sum to one, then adaptively shrunk toward the uniform distribution using beta=D(q,u)^gamma to improve stability in weak-signal settings."
+  },
+  "adaptive_shrinkage": {
+    "distribution_reference": "uniform",
+    "uniform_distribution_value": 0.16666666666666666,
+    "gamma": 1.0,
+    "uniform_deviation": 0.14508816120906898,
+    "beta": 0.14508816120906898
+  },
+  "full_coalition_metrics": {
+    "utility_metric": "gen_acc",
+    "gen_loss": 1.4740684295654296,
+    "gen_acc": 0.7036,
+    "utility": 0.7036
+  },
+  "leave_one_out_results": [
+    {
+      "excluded_client_id": 0,
+      "excluded_participant_id": "p1",
+      "retained_clients": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gen_loss": 1.4946457489013671,
+      "gen_acc": 0.6931,
+      "utility": 0.6931,
+      "loo_value": 0.010499999999999954
+    },
+    {
+      "excluded_client_id": 1,
+      "excluded_participant_id": "p2",
+      "retained_clients": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gen_loss": 1.5373426116943358,
+      "gen_acc": 0.6962,
+      "utility": 0.6962,
+      "loo_value": 0.007399999999999962
+    },
+    {
+      "excluded_client_id": 2,
+      "excluded_participant_id": "p3",
+      "retained_clients": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "gen_loss": 1.5414587371826172,
+      "gen_acc": 0.6895,
+      "utility": 0.6895,
+      "loo_value": 0.014100000000000001
+    },
+    {
+      "excluded_client_id": 3,
+      "excluded_participant_id": "p4",
+      "retained_clients": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "gen_loss": 1.5822611694335937,
+      "gen_acc": 0.6847,
+      "utility": 0.6847,
+      "loo_value": 0.018900000000000028
+    },
+    {
+      "excluded_client_id": 4,
+      "excluded_participant_id": "p5",
+      "retained_clients": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "gen_loss": 1.5626321380615233,
+      "gen_acc": 0.6873,
+      "utility": 0.6873,
+      "loo_value": 0.01629999999999998
+    },
+    {
+      "excluded_client_id": 5,
+      "excluded_participant_id": "p6",
+      "retained_clients": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "gen_loss": 1.5526938598632813,
+      "gen_acc": 0.6914,
+      "utility": 0.6914,
+      "loo_value": 0.012199999999999989
+    }
+  ],
+  "client_average_contributions": [
+    {
+      "client_id": 0,
+      "participant_id": "p1",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.010499999999999954,
+      "loo_positive_part": 0.010499999999999954,
+      "raw_normalized_contribution": 0.13224181360201467,
+      "average_normalized_contribution": 0.16167202803562392,
+      "stabilized_normalized_contribution": 0.16167202803562392
+    },
+    {
+      "client_id": 1,
+      "participant_id": "p2",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.007399999999999962,
+      "loo_positive_part": 0.007399999999999962,
+      "raw_normalized_contribution": 0.09319899244332457,
+      "average_normalized_contribution": 0.15600737690529504,
+      "stabilized_normalized_contribution": 0.15600737690529504
+    },
+    {
+      "client_id": 2,
+      "participant_id": "p3",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.014100000000000001,
+      "loo_positive_part": 0.014100000000000001,
+      "raw_normalized_contribution": 0.17758186397984907,
+      "average_normalized_contribution": 0.16825033257407046,
+      "stabilized_normalized_contribution": 0.16825033257407046
+    },
+    {
+      "client_id": 3,
+      "participant_id": "p4",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.018900000000000028,
+      "loo_positive_part": 0.018900000000000028,
+      "raw_normalized_contribution": 0.2380352644836278,
+      "average_normalized_contribution": 0.17702140529199914,
+      "stabilized_normalized_contribution": 0.17702140529199914
+    },
+    {
+      "client_id": 4,
+      "participant_id": "p5",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.01629999999999998,
+      "loo_positive_part": 0.01629999999999998,
+      "raw_normalized_contribution": 0.2052896725440806,
+      "average_normalized_contribution": 0.17227040756978773,
+      "stabilized_normalized_contribution": 0.17227040756978773
+    },
+    {
+      "client_id": 5,
+      "participant_id": "p6",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.012199999999999989,
+      "loo_positive_part": 0.012199999999999989,
+      "raw_normalized_contribution": 0.15365239294710328,
+      "average_normalized_contribution": 0.16477844962322372,
+      "stabilized_normalized_contribution": 0.16477844962322372
+    }
+  ],
+  "category_average_contributions": [
+    {
+      "client_category": "iid_shared_distribution",
+      "average_normalized_contribution": 0.16666666666666666
+    }
+  ],
+  "raw_category_average_contributions": [
+    {
+      "client_category": "iid_shared_distribution",
+      "average_normalized_contribution": 0.16666666666666666
+    }
+  ],
+  "client_configs": [
+    {
+      "client_id": 0,
+      "participant_id": "p1",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 1,
+      "participant_id": "p2",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 2,
+      "participant_id": "p3",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 3,
+      "participant_id": "p4",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 4,
+      "participant_id": "p5",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 5,
+      "participant_id": "p6",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    }
+  ]
+}

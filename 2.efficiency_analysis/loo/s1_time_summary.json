@@ -1,0 +1,45 @@
+{
+  "config": {
+    "code_version": "loo_controlled_time_analysis_s1_v1",
+    "method": "loo",
+    "client_counts": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rounds": 10,
+    "client_size": 1000,
+    "created_at": "2026-04-14T11:21:07"
+  },
+  "timing_results": [
+    {
+      "n": 3,
+      "time_seconds": 91.27644189447165,
+      "time_minutes": 1.5212740315745275
+    },
+    {
+      "n": 4,
+      "time_seconds": 117.40191255882382,
+      "time_minutes": 1.9566985426470638
+    },
+    {
+      "n": 5,
+      "time_seconds": 143.08778094127774,
+      "time_minutes": 2.3847963490212956
+    },
+    {
+      "n": 6,
+      "time_seconds": 168.27882540225983,
+      "time_minutes": 2.8046470900376637
+    },
+    {
+      "n": 7,
+      "time_seconds": 197.05560198426247,
+      "time_minutes": 3.284260033071041
+    }
+  ],
+  "total_elapsed_seconds": 3053.239794747904,
+  "total_elapsed_minutes": 50.88732991246506
+}

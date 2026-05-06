@@ -1,0 +1,493 @@
+{
+  "config": {
+    "code_version": "loo_controlled_compare_s2_global_v1",
+    "base_code_version": "mingaplr_compare_v6_damped_no_early_stop",
+    "dataset": "CIFAR-10",
+    "partition": "CONTROLLED_S2",
+    "scenario_tag": "S2",
+    "num_clients": 6,
+    "clients_per_round": 6,
+    "rounds": 30,
+    "task_size": 1000,
+    "gen_test_size": 10000,
+    "private_train_size": 49000,
+    "fixed_seed": 42,
+    "loo_scope": "global",
+    "loo_utility_metric": "gen_acc",
+    "normalized_contribution": "positive_loo_sum_to_one_else_uniform",
+    "run_count": 7,
+    "requested_client_samples": 18000,
+    "unused_private_samples": 31000,
+    "controlled_note": "Client data generation matches the controlled SmartFL scripts. A full federated training run is executed once using all 6 clients, then once for each leave-one-out client set. Global LOO values are computed as U(N) - U(N\\{i}) using the final model utility."
+  },
+  "full_coalition_metrics": {
+    "utility_metric": "gen_acc",
+    "gen_loss": 2.7347963928222656,
+    "gen_acc": 0.4949,
+    "utility": 0.4949
+  },
+  "leave_one_out_results": [
+    {
+      "excluded_client_id": 0,
+      "excluded_participant_id": "p1",
+      "retained_clients": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gen_loss": 3.1341319763183595,
+      "gen_acc": 0.4344,
+      "utility": 0.4344,
+      "loo_value": 0.0605
+    },
+    {
+      "excluded_client_id": 1,
+      "excluded_participant_id": "p2",
+      "retained_clients": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gen_loss": 2.9636119018554687,
+      "gen_acc": 0.4609,
+      "utility": 0.4609,
+      "loo_value": 0.03400000000000003
+    },
+    {
+      "excluded_client_id": 2,
+      "excluded_participant_id": "p3",
+      "retained_clients": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "gen_loss": 2.893721307373047,
+      "gen_acc": 0.4708,
+      "utility": 0.4708,
+      "loo_value": 0.02410000000000001
+    },
+    {
+      "excluded_client_id": 3,
+      "excluded_participant_id": "p4",
+      "retained_clients": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "gen_loss": 2.7935978332519533,
+      "gen_acc": 0.4853,
+      "utility": 0.4853,
+      "loo_value": 0.009599999999999997
+    },
+    {
+      "excluded_client_id": 4,
+      "excluded_participant_id": "p5",
+      "retained_clients": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "gen_loss": 2.671081652832031,
+      "gen_acc": 0.5066,
+      "utility": 0.5066,
+      "loo_value": -0.011700000000000044
+    },
+    {
+      "excluded_client_id": 5,
+      "excluded_participant_id": "p6",
+      "retained_clients": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "gen_loss": 2.562710418701172,
+      "gen_acc": 0.5173,
+      "utility": 0.5173,
+      "loo_value": -0.022399999999999975
+    }
+  ],
+  "client_average_contributions": [
+    {
+      "client_id": 0,
+      "participant_id": "p1",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.0605,
+      "loo_positive_part": 0.0605,
+      "average_normalized_contribution": 0.47191887675507005
+    },
+    {
+      "client_id": 1,
+      "participant_id": "p2",
+      "client_size": 3000,
+      "noise_rate": 0.1,
+      "missing_class_count": 0,
+      "client_category": "noise10",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.03400000000000003,
+      "loo_positive_part": 0.03400000000000003,
+      "average_normalized_contribution": 0.26521060842433714
+    },
+    {
+      "client_id": 2,
+      "participant_id": "p3",
+      "client_size": 3000,
+      "noise_rate": 0.2,
+      "missing_class_count": 0,
+      "client_category": "noise20",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.02410000000000001,
+      "loo_positive_part": 0.02410000000000001,
+      "average_normalized_contribution": 0.18798751950078005
+    },
+    {
+      "client_id": 3,
+      "participant_id": "p4",
+      "client_size": 3000,
+      "noise_rate": 0.3,
+      "missing_class_count": 0,
+      "client_category": "noise30",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": 0.009599999999999997,
+      "loo_positive_part": 0.009599999999999997,
+      "average_normalized_contribution": 0.07488299531981275
+    },
+    {
+      "client_id": 4,
+      "participant_id": "p5",
+      "client_size": 3000,
+      "noise_rate": 0.4,
+      "missing_class_count": 0,
+      "client_category": "noise40",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": -0.011700000000000044,
+      "loo_positive_part": 0.0,
+      "average_normalized_contribution": 0.0
+    },
+    {
+      "client_id": 5,
+      "participant_id": "p6",
+      "client_size": 3000,
+      "noise_rate": 0.5,
+      "missing_class_count": 0,
+      "client_category": "noise50",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "loo_value": -0.022399999999999975,
+      "loo_positive_part": 0.0,
+      "average_normalized_contribution": 0.0
+    }
+  ],
+  "category_average_contributions": [
+    {
+      "client_category": "noise20",
+      "average_normalized_contribution": 0.18798751950078005
+    },
+    {
+      "client_category": "noise40",
+      "average_normalized_contribution": 0.0
+    },
+    {
+      "client_category": "iid_shared_distribution",
+      "average_normalized_contribution": 0.47191887675507005
+    },
+    {
+      "client_category": "noise10",
+      "average_normalized_contribution": 0.26521060842433714
+    },
+    {
+      "client_category": "noise30",
+      "average_normalized_contribution": 0.07488299531981275
+    },
+    {
+      "client_category": "noise50",
+      "average_normalized_contribution": 0.0
+    }
+  ],
+  "client_configs": [
+    {
+      "client_id": 0,
+      "participant_id": "p1",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 1,
+      "participant_id": "p2",
+      "client_size": 3000,
+      "noise_rate": 0.1,
+      "missing_class_count": 0,
+      "client_category": "noise10",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 2,
+      "participant_id": "p3",
+      "client_size": 3000,
+      "noise_rate": 0.2,
+      "missing_class_count": 0,
+      "client_category": "noise20",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 3,
+      "participant_id": "p4",
+      "client_size": 3000,
+      "noise_rate": 0.3,
+      "missing_class_count": 0,
+      "client_category": "noise30",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 4,
+      "participant_id": "p5",
+      "client_size": 3000,
+      "noise_rate": 0.4,
+      "missing_class_count": 0,
+      "client_category": "noise40",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 5,
+      "participant_id": "p6",
+      "client_size": 3000,
+      "noise_rate": 0.5,
+      "missing_class_count": 0,
+      "client_category": "noise50",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    }
+  ]
+}

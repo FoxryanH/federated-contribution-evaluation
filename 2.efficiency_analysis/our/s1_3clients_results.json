@@ -1,0 +1,134 @@
+{
+  "method": "smartfl",
+  "code_version": "smartfl_controlled_time_analysis_s1_v1",
+  "n": 3,
+  "rounds": 10,
+  "client_size": 1000,
+  "parallel_time_analysis": {
+    "rounds": [
+      {
+        "round_index": 1,
+        "selected_clients": [
+          2,
+          0,
+          1
+        ],
+        "max_client_local_train_seconds": 3.249694049358368,
+        "contribution_evaluation_seconds": 3.5354537777602673,
+        "estimated_parallel_round_total_seconds": 6.785147827118635
+      },
+      {
+        "round_index": 2,
+        "selected_clients": [
+          2,
+          1,
+          0
+        ],
+        "max_client_local_train_seconds": 2.577767038717866,
+        "contribution_evaluation_seconds": 3.3269191812723875,
+        "estimated_parallel_round_total_seconds": 5.9046862199902534
+      },
+      {
+        "round_index": 3,
+        "selected_clients": [
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.5908407364040613,
+        "contribution_evaluation_seconds": 3.2586186416447163,
+        "estimated_parallel_round_total_seconds": 5.849459378048778
+      },
+      {
+        "round_index": 4,
+        "selected_clients": [
+          2,
+          0,
+          1
+        ],
+        "max_client_local_train_seconds": 2.583328614011407,
+        "contribution_evaluation_seconds": 3.2502712067216635,
+        "estimated_parallel_round_total_seconds": 5.83359982073307
+      },
+      {
+        "round_index": 5,
+        "selected_clients": [
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.600052636116743,
+        "contribution_evaluation_seconds": 3.3122680876404047,
+        "estimated_parallel_round_total_seconds": 5.912320723757148
+      },
+      {
+        "round_index": 6,
+        "selected_clients": [
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.672282837331295,
+        "contribution_evaluation_seconds": 3.2751340325921774,
+        "estimated_parallel_round_total_seconds": 5.947416869923472
+      },
+      {
+        "round_index": 7,
+        "selected_clients": [
+          2,
+          0,
+          1
+        ],
+        "max_client_local_train_seconds": 2.652086952701211,
+        "contribution_evaluation_seconds": 3.295844877138734,
+        "estimated_parallel_round_total_seconds": 5.947931829839945
+      },
+      {
+        "round_index": 8,
+        "selected_clients": [
+          0,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.6251457314938307,
+        "contribution_evaluation_seconds": 3.2743835486471653,
+        "estimated_parallel_round_total_seconds": 5.899529280140996
+      },
+      {
+        "round_index": 9,
+        "selected_clients": [
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.617860071361065,
+        "contribution_evaluation_seconds": 3.255872068926692,
+        "estimated_parallel_round_total_seconds": 5.873732140287757
+      },
+      {
+        "round_index": 10,
+        "selected_clients": [
+          1,
+          2,
+          0
+        ],
+        "max_client_local_train_seconds": 2.5833692494779825,
+        "contribution_evaluation_seconds": 3.27773242816329,
+        "estimated_parallel_round_total_seconds": 5.8611016776412725
+      }
+    ],
+    "total_max_client_local_train_seconds": 26.75242791697383,
+    "total_contribution_evaluation_seconds": 33.0624978505075,
+    "total_estimated_parallel_time_seconds": 59.81492576748133,
+    "total_estimated_parallel_time_minutes": 0.9969154294580221
+  },
+  "wall_clock_time_analysis": {
+    "method": "smartfl",
+    "time_analysis_code_version": "smartfl_controlled_time_analysis_s1_v1",
+    "n": 3,
+    "rounds": 10,
+    "client_size": 1000,
+    "wall_clock_seconds": 133.00331509672105,
+    "wall_clock_minutes": 2.2167219182786844
+  }
+}

@@ -1,0 +1,387 @@
+{
+  "config": {
+    "code_version": "shapley_controlled_compare_s1_global_exact_v3",
+    "base_code_version": "mingaplr_compare_v6_damped_no_early_stop",
+    "dataset": "CIFAR-10",
+    "partition": "CONTROLLED_S1",
+    "scenario_tag": "S1",
+    "num_clients": 6,
+    "clients_per_round": 6,
+    "rounds": 30,
+    "task_size": 1000,
+    "gen_test_size": 10000,
+    "private_train_size": 49000,
+    "fixed_seed": 42,
+    "shapley_scope": "global_exact",
+    "shapley_utility_metric": "gen_acc",
+    "normalized_contribution": "positive_shapley_sum_to_one_else_uniform",
+    "coalition_count": 64,
+    "requested_client_samples": 18000,
+    "unused_private_samples": 31000,
+    "controlled_note": "Client data generation matches the controlled SmartFL scripts. For every coalition of the 6 clients, the full federated training process is rerun from the same initialization, then exact Shapley values are computed from the final coalition utility."
+  },
+  "empty_coalition_metrics": {
+    "utility_metric": "gen_acc",
+    "gen_loss": 2.3039312561035157,
+    "gen_acc": 0.0986,
+    "utility": 0.0
+  },
+  "grand_coalition_metrics": {
+    "utility_metric": "gen_acc",
+    "gen_loss": 1.4876274505615235,
+    "gen_acc": 0.7053,
+    "utility": 0.6067
+  },
+  "client_average_contributions": [
+    {
+      "client_id": 0,
+      "participant_id": "p1",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "shapley_value": 0.10045666666666665,
+      "shapley_positive_part": 0.10045666666666665,
+      "average_normalized_contribution": 0.1655788143508598
+    },
+    {
+      "client_id": 1,
+      "participant_id": "p2",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "shapley_value": 0.10217499999999999,
+      "shapley_positive_part": 0.10217499999999999,
+      "average_normalized_contribution": 0.16841107631448818
+    },
+    {
+      "client_id": 2,
+      "participant_id": "p3",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "shapley_value": 0.10469833333333335,
+      "shapley_positive_part": 0.10469833333333335,
+      "average_normalized_contribution": 0.17257018845118402
+    },
+    {
+      "client_id": 3,
+      "participant_id": "p4",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "shapley_value": 0.10041666666666664,
+      "shapley_positive_part": 0.10041666666666664,
+      "average_normalized_contribution": 0.16551288390747756
+    },
+    {
+      "client_id": 4,
+      "participant_id": "p5",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "shapley_value": 0.09919666666666667,
+      "shapley_positive_part": 0.09919666666666667,
+      "average_normalized_contribution": 0.16350200538431955
+    },
+    {
+      "client_id": 5,
+      "participant_id": "p6",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "shapley_value": 0.09975666666666666,
+      "shapley_positive_part": 0.09975666666666666,
+      "average_normalized_contribution": 0.16442503159167077
+    }
+  ],
+  "category_average_contributions": [
+    {
+      "client_category": "iid_shared_distribution",
+      "average_normalized_contribution": 0.16666666666666666
+    }
+  ],
+  "client_configs": [
+    {
+      "client_id": 0,
+      "participant_id": "p1",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 1,
+      "participant_id": "p2",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 2,
+      "participant_id": "p3",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 3,
+      "participant_id": "p4",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 4,
+      "participant_id": "p5",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    },
+    {
+      "client_id": 5,
+      "participant_id": "p6",
+      "client_size": 3000,
+      "noise_rate": 0.0,
+      "missing_class_count": 0,
+      "client_category": "iid_shared_distribution",
+      "available_classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "missing_classes": [],
+      "target_class_counts": {
+        "0": 300,
+        "1": 300,
+        "2": 300,
+        "3": 300,
+        "4": 300,
+        "5": 300,
+        "6": 300,
+        "7": 300,
+        "8": 300,
+        "9": 300
+      }
+    }
+  ]
+}

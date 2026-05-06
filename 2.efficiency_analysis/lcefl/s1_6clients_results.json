@@ -1,0 +1,324 @@
+{
+  "method": "lcefl",
+  "code_version": "lcefl_controlled_time_analysis_s1_v1",
+  "n": 6,
+  "rounds": 10,
+  "client_size": 1000,
+  "parallel_time_analysis": {
+    "phase_rounds": [
+      {
+        "phase": "train_pass_1",
+        "round_index": 1,
+        "selected_clients": [
+          5,
+          0,
+          4,
+          2,
+          1,
+          3
+        ],
+        "max_client_local_train_seconds": 2.6760131791234016,
+        "contribution_evaluation_seconds": 1.7425383757799864,
+        "estimated_parallel_round_total_seconds": 4.418551554903388
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 2,
+        "selected_clients": [
+          1,
+          5,
+          0,
+          2,
+          3,
+          4
+        ],
+        "max_client_local_train_seconds": 2.280889518558979,
+        "contribution_evaluation_seconds": 0.8782026171684265,
+        "estimated_parallel_round_total_seconds": 3.1590921357274055
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 3,
+        "selected_clients": [
+          0,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.3013062719255686,
+        "contribution_evaluation_seconds": 0.8367565553635359,
+        "estimated_parallel_round_total_seconds": 3.1380628272891045
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 4,
+        "selected_clients": [
+          4,
+          1,
+          3,
+          0,
+          5,
+          2
+        ],
+        "max_client_local_train_seconds": 2.2866654638201,
+        "contribution_evaluation_seconds": 0.857428178191185,
+        "estimated_parallel_round_total_seconds": 3.144093642011285
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 5,
+        "selected_clients": [
+          0,
+          1,
+          3,
+          4,
+          2,
+          5
+        ],
+        "max_client_local_train_seconds": 2.2976160552352667,
+        "contribution_evaluation_seconds": 0.8916870057582855,
+        "estimated_parallel_round_total_seconds": 3.189303060993552
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 6,
+        "selected_clients": [
+          1,
+          2,
+          0,
+          3,
+          5,
+          4
+        ],
+        "max_client_local_train_seconds": 2.314440779387951,
+        "contribution_evaluation_seconds": 0.8169684056192636,
+        "estimated_parallel_round_total_seconds": 3.1314091850072145
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 7,
+        "selected_clients": [
+          2,
+          5,
+          4,
+          0,
+          1,
+          3
+        ],
+        "max_client_local_train_seconds": 1.7686985898762941,
+        "contribution_evaluation_seconds": 0.8359485119581223,
+        "estimated_parallel_round_total_seconds": 2.6046471018344164
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 8,
+        "selected_clients": [
+          3,
+          0,
+          2,
+          5,
+          1,
+          4
+        ],
+        "max_client_local_train_seconds": 2.190506374463439,
+        "contribution_evaluation_seconds": 0.8134378809481859,
+        "estimated_parallel_round_total_seconds": 3.003944255411625
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 9,
+        "selected_clients": [
+          5,
+          0,
+          4,
+          2,
+          3,
+          1
+        ],
+        "max_client_local_train_seconds": 2.2372174244374037,
+        "contribution_evaluation_seconds": 0.8480057958513498,
+        "estimated_parallel_round_total_seconds": 3.0852232202887535
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 10,
+        "selected_clients": [
+          0,
+          1,
+          5,
+          4,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.318097807466984,
+        "contribution_evaluation_seconds": 0.8203057516366243,
+        "estimated_parallel_round_total_seconds": 3.138403559103608
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 1,
+        "selected_clients": [
+          5,
+          0,
+          4,
+          2,
+          1,
+          3
+        ],
+        "max_client_local_train_seconds": 2.2895024605095387,
+        "contribution_evaluation_seconds": 1.3423551972955465,
+        "estimated_parallel_round_total_seconds": 3.631857657805085
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 2,
+        "selected_clients": [
+          1,
+          5,
+          0,
+          2,
+          3,
+          4
+        ],
+        "max_client_local_train_seconds": 2.3041014596819878,
+        "contribution_evaluation_seconds": 1.1042792741209269,
+        "estimated_parallel_round_total_seconds": 3.4083807338029146
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 3,
+        "selected_clients": [
+          0,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.3370206225663424,
+        "contribution_evaluation_seconds": 1.0697424411773682,
+        "estimated_parallel_round_total_seconds": 3.4067630637437105
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 4,
+        "selected_clients": [
+          4,
+          1,
+          3,
+          0,
+          5,
+          2
+        ],
+        "max_client_local_train_seconds": 2.3117819763720036,
+        "contribution_evaluation_seconds": 1.0506801344454288,
+        "estimated_parallel_round_total_seconds": 3.3624621108174324
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 5,
+        "selected_clients": [
+          0,
+          1,
+          3,
+          4,
+          2,
+          5
+        ],
+        "max_client_local_train_seconds": 2.2970794308930635,
+        "contribution_evaluation_seconds": 1.0532954968512058,
+        "estimated_parallel_round_total_seconds": 3.3503749277442694
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 6,
+        "selected_clients": [
+          1,
+          2,
+          0,
+          3,
+          5,
+          4
+        ],
+        "max_client_local_train_seconds": 2.262402717024088,
+        "contribution_evaluation_seconds": 1.1017445027828217,
+        "estimated_parallel_round_total_seconds": 3.3641472198069096
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 7,
+        "selected_clients": [
+          2,
+          5,
+          4,
+          0,
+          1,
+          3
+        ],
+        "max_client_local_train_seconds": 2.3584502059966326,
+        "contribution_evaluation_seconds": 1.062129395082593,
+        "estimated_parallel_round_total_seconds": 3.4205796010792255
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 8,
+        "selected_clients": [
+          3,
+          0,
+          2,
+          5,
+          1,
+          4
+        ],
+        "max_client_local_train_seconds": 2.3076078202575445,
+        "contribution_evaluation_seconds": 1.035314004868269,
+        "estimated_parallel_round_total_seconds": 3.3429218251258135
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 9,
+        "selected_clients": [
+          5,
+          0,
+          4,
+          2,
+          3,
+          1
+        ],
+        "max_client_local_train_seconds": 2.3242843113839626,
+        "contribution_evaluation_seconds": 1.0503922123461962,
+        "estimated_parallel_round_total_seconds": 3.374676523730159
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 10,
+        "selected_clients": [
+          0,
+          1,
+          5,
+          4,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.294380061328411,
+        "contribution_evaluation_seconds": 1.0604605097323656,
+        "estimated_parallel_round_total_seconds": 3.3548405710607767
+      }
+    ],
+    "total_max_client_local_train_seconds": 45.75806253030896,
+    "total_contribution_evaluation_seconds": 20.271672246977687,
+    "total_estimated_parallel_time_seconds": 66.02973477728665,
+    "total_estimated_parallel_time_minutes": 1.1004955796214442
+  },
+  "wall_clock_time_analysis": {
+    "method": "lcefl",
+    "time_analysis_code_version": "lcefl_controlled_time_analysis_s1_v1",
+    "n": 6,
+    "rounds": 10,
+    "client_size": 1000,
+    "wall_clock_seconds": 292.0434328187257,
+    "wall_clock_minutes": 4.867390546978762
+  }
+}

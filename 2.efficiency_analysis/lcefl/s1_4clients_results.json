@@ -1,0 +1,284 @@
+{
+  "method": "lcefl",
+  "code_version": "lcefl_controlled_time_analysis_s1_v1",
+  "n": 4,
+  "rounds": 10,
+  "client_size": 1000,
+  "parallel_time_analysis": {
+    "phase_rounds": [
+      {
+        "phase": "train_pass_1",
+        "round_index": 1,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.1945236027240753,
+        "contribution_evaluation_seconds": 1.7607750315219164,
+        "estimated_parallel_round_total_seconds": 3.9552986342459917
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 2,
+        "selected_clients": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.2928551714867353,
+        "contribution_evaluation_seconds": 0.840735450387001,
+        "estimated_parallel_round_total_seconds": 3.1335906218737364
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 3,
+        "selected_clients": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.3375144843012094,
+        "contribution_evaluation_seconds": 0.8197859674692154,
+        "estimated_parallel_round_total_seconds": 3.157300451770425
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 4,
+        "selected_clients": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.2767314817756414,
+        "contribution_evaluation_seconds": 0.818235332146287,
+        "estimated_parallel_round_total_seconds": 3.0949668139219284
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 5,
+        "selected_clients": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.297700559720397,
+        "contribution_evaluation_seconds": 0.8040539380162954,
+        "estimated_parallel_round_total_seconds": 3.1017544977366924
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 6,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.3221109192818403,
+        "contribution_evaluation_seconds": 0.8159804977476597,
+        "estimated_parallel_round_total_seconds": 3.1380914170295
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 7,
+        "selected_clients": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "max_client_local_train_seconds": 2.35320501960814,
+        "contribution_evaluation_seconds": 0.8302014339715242,
+        "estimated_parallel_round_total_seconds": 3.1834064535796642
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 8,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.3280035369098186,
+        "contribution_evaluation_seconds": 0.8325744494795799,
+        "estimated_parallel_round_total_seconds": 3.1605779863893986
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 9,
+        "selected_clients": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "max_client_local_train_seconds": 2.03393186442554,
+        "contribution_evaluation_seconds": 0.8261521104723215,
+        "estimated_parallel_round_total_seconds": 2.8600839748978615
+      },
+      {
+        "phase": "train_pass_1",
+        "round_index": 10,
+        "selected_clients": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "max_client_local_train_seconds": 2.306108905002475,
+        "contribution_evaluation_seconds": 0.8389160893857479,
+        "estimated_parallel_round_total_seconds": 3.1450249943882227
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 1,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.270917946472764,
+        "contribution_evaluation_seconds": 1.2654157131910324,
+        "estimated_parallel_round_total_seconds": 3.5363336596637964
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 2,
+        "selected_clients": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.3468884360045195,
+        "contribution_evaluation_seconds": 1.0117386169731617,
+        "estimated_parallel_round_total_seconds": 3.358627052977681
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 3,
+        "selected_clients": [
+          3,
+          0,
+          2,
+          1
+        ],
+        "max_client_local_train_seconds": 2.2810251526534557,
+        "contribution_evaluation_seconds": 0.9565763715654612,
+        "estimated_parallel_round_total_seconds": 3.237601524218917
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 4,
+        "selected_clients": [
+          1,
+          0,
+          2,
+          3
+        ],
+        "max_client_local_train_seconds": 2.3097311556339264,
+        "contribution_evaluation_seconds": 0.9873365238308907,
+        "estimated_parallel_round_total_seconds": 3.297067679464817
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 5,
+        "selected_clients": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.2994976323097944,
+        "contribution_evaluation_seconds": 1.014312842860818,
+        "estimated_parallel_round_total_seconds": 3.3138104751706123
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 6,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.2924687955528498,
+        "contribution_evaluation_seconds": 0.978573139756918,
+        "estimated_parallel_round_total_seconds": 3.2710419353097677
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 7,
+        "selected_clients": [
+          2,
+          0,
+          3,
+          1
+        ],
+        "max_client_local_train_seconds": 2.3096977826207876,
+        "contribution_evaluation_seconds": 1.0149524938315153,
+        "estimated_parallel_round_total_seconds": 3.324650276452303
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 8,
+        "selected_clients": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "max_client_local_train_seconds": 2.261276103556156,
+        "contribution_evaluation_seconds": 0.9761418886482716,
+        "estimated_parallel_round_total_seconds": 3.2374179922044277
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 9,
+        "selected_clients": [
+          2,
+          1,
+          3,
+          0
+        ],
+        "max_client_local_train_seconds": 2.275308955460787,
+        "contribution_evaluation_seconds": 0.9571172669529915,
+        "estimated_parallel_round_total_seconds": 3.2324262224137783
+      },
+      {
+        "phase": "train_pass_2",
+        "round_index": 10,
+        "selected_clients": [
+          3,
+          2,
+          0,
+          1
+        ],
+        "max_client_local_train_seconds": 2.196072120219469,
+        "contribution_evaluation_seconds": 0.9822121988981962,
+        "estimated_parallel_round_total_seconds": 3.1782843191176653
+      }
+    ],
+    "total_max_client_local_train_seconds": 45.58556962572038,
+    "total_contribution_evaluation_seconds": 19.331787357106805,
+    "total_estimated_parallel_time_seconds": 64.91735698282719,
+    "total_estimated_parallel_time_minutes": 1.0819559497137865
+  },
+  "wall_clock_time_analysis": {
+    "method": "lcefl",
+    "time_analysis_code_version": "lcefl_controlled_time_analysis_s1_v1",
+    "n": 4,
+    "rounds": 10,
+    "client_size": 1000,
+    "wall_clock_seconds": 203.11136263236403,
+    "wall_clock_minutes": 3.3851893772060673
+  }
+}
